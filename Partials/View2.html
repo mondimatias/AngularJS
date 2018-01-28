@@ -2,7 +2,7 @@
         <h2>View 2</h2>
         City:
         <br>
-        <input type="text" data-ng-model="name" />
+        <input type="text" data-ng-model="filter.city" />
         <br>
         <ul>
                 <li data-ng-repeat="cust in customers | filter:filter.city  | orderBy:'filter.city'">{{cust.name | uppercase}} - {{cust.city | lowercase}}</li>
